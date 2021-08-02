@@ -6,6 +6,7 @@
                     <h2>{{ $post->title }}</h2>
                     <p>{{ $post->previev }}</p>
                     <p><a href="/posts/{{$post->id}}" class="btn btn-default">Читать далее</a> </p>
+                    вапвпап
                     
     </div>
     @endforeach
