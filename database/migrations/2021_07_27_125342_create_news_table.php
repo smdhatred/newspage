@@ -18,7 +18,6 @@ class CreateNewsTable extends Migration
             $table->string('title');
             $table->string('previev');
             $table->text('content');
-            $table->boolean('is_active');
             $table->time('published_at');
             $table->softDeletes();
             $table->timestamps();

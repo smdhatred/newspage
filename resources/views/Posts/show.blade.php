@@ -7,8 +7,8 @@
 
             <div class="blog-post">
                 <h2 class="blog-post-title">{{$post->title}}</h2>
-                <p class="blog-post-meta">{{$post->pulished_at}}</p>
-
+                <p class="blog-post-meta">{{$post->published_at}}</p>
+                
                 <p>
                     {{$post->content}}
                 </p>
