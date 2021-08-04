@@ -24,7 +24,7 @@
 <div class="jumbotron">
     <div class="container">
         <h1>Hello, World!</h1>
-            </div>
+    </div>
 </div>
 
 <div class="container">

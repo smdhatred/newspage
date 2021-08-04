@@ -40,5 +40,29 @@ class PostController extends BaseController
 
         return redirect('/');
     }
+    public function edit(News $post)
+    {
+        return view("posts.edit", compact('post'));
+    }
+    
+    public function update(News $post)
+    {
+
+        $this->validate(request(), [
+            'title' => 'required|min:2',
+            'alias' => 'required',
+            'previev' => 'required',
+            'content' => 'required',
+            'published_at'=>'required',
+        ]);
+        $post->update(request(['title', 'alias', 'previev', 'content','published_at']));
+        return redirect('/');
+    }
+    public function destroy(News $post){
+        $post->delete();
+        return redirect('/');
+    }
+
+
 
 }

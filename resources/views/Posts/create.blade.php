@@ -35,7 +35,7 @@
             <button class="btn btn-primary" type="submit">Post</button>
         </div>
 
-        
+        @include('layouts.errors')
 
     </form>
 
